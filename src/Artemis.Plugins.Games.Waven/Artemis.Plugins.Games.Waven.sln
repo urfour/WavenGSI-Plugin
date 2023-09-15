@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Artemis.Plugins.Games.Waven", "Artemis.Plugins.Games.Waven.csproj", "{53537D9A-F204-43BB-9B0A-6E8D8AF82377}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53537D9A-F204-43BB-9B0A-6E8D8AF82377}.Debug|x64.ActiveCfg = Debug|x64
+		{53537D9A-F204-43BB-9B0A-6E8D8AF82377}.Debug|x64.Build.0 = Debug|x64
+		{53537D9A-F204-43BB-9B0A-6E8D8AF82377}.Release|x64.ActiveCfg = Release|x64
+		{53537D9A-F204-43BB-9B0A-6E8D8AF82377}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF2E45A8-E051-4DFB-A9DA-3D4EECB622FC}
+	EndGlobalSection
+EndGlobal

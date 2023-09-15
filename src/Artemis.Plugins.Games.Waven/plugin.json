@@ -1,0 +1,15 @@
+{
+    "Guid": "3C54C8B4-6674-456F-8A09-AD3813BC438F",
+    "Name": "Waven",
+    "Description": "Artemis Game State Integration for Waven",
+    "Author": "UrFour",
+    "Website": "",
+    "Repository": "",
+    "Icon": "Resources/Waven_logo.png",
+    "Version": "1.0.0.0",
+    "Main": "Artemis.Plugins.Games.Waven.dll",
+    "AutoEnableProperties": true,
+    "RequiresAdmin": false,
+    "Platforms": "Windows,Linux,OSX",
+    "Api": "1.0.0"
+}

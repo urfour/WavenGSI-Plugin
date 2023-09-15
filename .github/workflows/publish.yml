@@ -1,0 +1,42 @@
+on:
+    workflow_dispatch:
+    push:
+      tags:
+      - '*'
+  
+name: Upload Release
+  
+jobs:
+    release:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Setup .NET
+            uses: actions/setup-dotnet@v1
+            with:
+              dotnet-version: '7.0.x'
+    
+          - name: Clone
+            uses: actions/checkout@v2
+    
+          - name: Build
+            run: dotnet publish -c Release src
+    
+          - name: Upload
+            uses: actions/upload-artifact@v3
+            with:
+              path: src/Artemis.Plugins.Games.Waven/bin/x64/Release/net7.0/publish
+              name: WavenGSI-Plugin
+
+          - name: Zip Artifact
+            run: |
+              cd src/Artemis.Plugins.Games.Waven/bin/x64/Release/net7.0/publish
+              ls -l .
+              zip -r ${{ github.workspace }}/WavenGSI-Plugin.zip *
+    
+          - name: Release with Notes
+            uses: softprops/action-gh-release@v1
+            with:
+              files: WavenGSI-Plugin.zip
+            env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  

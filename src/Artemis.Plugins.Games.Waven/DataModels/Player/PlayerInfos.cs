@@ -14,6 +14,7 @@ namespace Artemis.Plugins.Games.Waven.DataModels.Player
         public string? Weapon { get; set; }
         public int Level { get; set; }
         public bool IsInFight { get; set; }
+        public bool IsPlayerTurn { get; set; }
         public int BaseHealthPoints { get; set; }
         public int HealthPoints { get; set; }
         public int ActionPoints { get; set; }
@@ -22,6 +23,8 @@ namespace Artemis.Plugins.Games.Waven.DataModels.Player
         public int MovementPoints { get; set; }
         public int SpellsCount { get; set; }
         public SpellSlots? Spells { get; set; }
+        public CompanionSlots? Companions { get; set; }
+        public int CompanionsCount { get; set; }
         public PlayerInfos() { }
     }
 
